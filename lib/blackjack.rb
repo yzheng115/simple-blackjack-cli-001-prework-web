@@ -3,7 +3,7 @@ def welcome
 end
 
 def deal_card
-  rand(10)+1
+  rand(11)+1
 end
 
 def display_card_total(number)
@@ -68,7 +68,7 @@ def runner
     if user_input == "h"
       number = deal_card + number
     end
-    break if number >=21
+    break if number >21
 
     prompt_user
     user_input = get_user_input
